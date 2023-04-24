@@ -1,0 +1,45 @@
+<%-include("./uheader.ejs")%>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Create Institution Account</div>
+              <div class="card-body">
+                
+                <form id="create-institution-form" action="/addins"  method="POST" enctype="multipart/form-data">
+                  <div class="form-group">
+                    <label for="name">Name of Institution</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="image">Institution Image</label>
+                    <input type="file" class="form-control" id="image" name="image">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Create Account</button>
+                </form>
+                <div class="mt-3">
+                  Already have an account? <a href="/institutionlogin">Login here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    <!-- Footer -->
+    <%-include("./ufooter.ejs")%>

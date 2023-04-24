@@ -1,0 +1,28 @@
+<%-include("./header.ejs")%>
+
+
+<div style="padding:20%">
+    
+    <form action="/plogin" method="POST">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">email</label>
+            <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <!-- //<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">password</label>
+          <input type="text" name="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <!-- //<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+        </div>
+        
+    
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    <center>
+      <p><a href="/reg">create account</a></p>
+    </center>
+    
+  </div>
+
+

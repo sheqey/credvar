@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Encryption/Decryption Tool</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Encryption/Decryption Tool</h1>
+      <form id="form">
+        <label>
+          <input type="radio" name="operation" value="encrypt" id="encrypt" checked />
+          Encrypt
+        </label>
+        <label>
+          <input type="radio" name="operation" value="decrypt" id="decrypt" />
+          Decrypt
+        </label>
+        <label>
+          Input:
+          <br />
+          <textarea id="input" name="input"></textarea>
+        </label>
+        <label>
+          Output:
+          <br />
+          <textarea id="output" name="output" readonly></textarea>
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+      <div id="popup">
+        <p>Output Copied!</p>
+      </div>
+    </div>
+    <script src="en.js"></script>
+  </body>
+</html>

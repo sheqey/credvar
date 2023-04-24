@@ -1,0 +1,68 @@
+<%-include("./h2.ejs")%>
+
+
+
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">DataTables</h1>
+    
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID Number</th>
+                            <th>Certificate Number</th>
+                            <th>University</th>
+                            <th>Tittle</th>
+                            <th>Year of Graduation</th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID Number</th>
+                            <th>Certificate Number</th>
+                            <th>University</th>
+                            <th>Tittle</th>
+                            <th>Year of Graduation</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+
+                        <%for(var i= 0 ;i < data2.length;i++){%>
+
+                        <tr>
+                            <td><%=data2[i].name%></td>
+                            <td><%=data2[i].idno%></td>
+                            <td><%=data2[i].certno%></td>
+                            <td><%=data2[i].uni%></td>
+                            <td><%=data2[i].tittle%></td>
+                            <td><%=data2[i].year%></td>
+                            
+                        </tr>
+
+
+                        <%}%>
+
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<%-include("./f2.ejs")%>
